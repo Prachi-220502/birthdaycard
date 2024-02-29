@@ -17,17 +17,17 @@
         <img src="./opengift.png" id="opengift"/>
         <img src="./celebration.png" id="celebrate"/>
         <img src="./open.png" id="open"/>
-        <img id="1" src="./1.JPG"/>
-        <img id="2" src="./2.jpg"/>
-        <img id="3" src="./3.jpg"/>
-        <img id="4" src="./4.jpg"/>
-        <img id="5" src="./5.jpg"/>
-        <img id="6" src="./6.jpg"/>
-        <img id="7" src="./7.jpg"/>
-        <img id="8" src="./8.jpg"/>
-        <img id="9" src="./9.jpg"/>
-        <img id="10" src="./10.jpg"/>
-        <img id="11" src="./11.jpg"/>
+        <img id="1" src="1.JPG"/>
+        <img id="2" src="2.jpg"/>
+        <img id="3" src="3.jpg"/>
+        <img id="4" src="4.jpg"/>
+        <img id="5" src="5.jpg"/>
+        <img id="6" src="6.jpg"/>
+        <img id="7" src="7.jpg"/>
+        <img id="8" src="8.jpg"/>
+        <img id="9" src="9.jpg"/>
+        <img id="10" src="10.jpg"/>
+        <img id="11" src="11.jpg"/>
         <a-asset-item><video id="greenscreenvideo" src="./greenscreen.mp4" loop="true"></video></a-asset-item>
         <a-asset-item><video id="twirl" src="./twirl.mp4" loop="true"></video></a-asset-item>
         <a-asset-item id="cake" src="./cake.glb"></a-asset-item>
@@ -179,7 +179,7 @@
 
         gallery.addEventListener('animationcomplete',function() {
         gallery.removeAttribute('animation');
-        gallery.setAttribute('material',`src:./${i}.jpg; opacity:0`);
+        gallery.setAttribute('material',`src:${i}.jpg; opacity:0`);
         gallery.setAttribute('animation',{'property':'material.opacity','to':'1','dur':'1500','loop':'2','dir':'alternate','easing':'easeInOutElastic'});
         i++;
         if(i == 12){
