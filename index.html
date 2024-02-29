@@ -179,7 +179,7 @@
 
         gallery.addEventListener('animationcomplete',function() {
         gallery.removeAttribute('animation');
-        gallery.setAttribute('material',`src:#${i}; opacity:0`);
+        gallery.setAttribute('material',`src:./${i}.jpg; opacity:0`);
         gallery.setAttribute('animation',{'property':'material.opacity','to':'1','dur':'1500','loop':'2','dir':'alternate','easing':'easeInOutElastic'});
         i++;
         if(i == 12){
